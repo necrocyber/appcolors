@@ -19,3 +19,4 @@ Correr en consola `ng serve` para levantar el proyecto en local
 
 ## URL a producción en caso de haber sido subido
 
+https://paletacolor-ec62b.firebaseapp.com/
