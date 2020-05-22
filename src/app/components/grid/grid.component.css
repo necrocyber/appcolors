@@ -3,8 +3,14 @@
     border-radius: 3px;
     margin: 5px;
     flex: 1 1 30%;
+    font-size: 12px;
+    padding: 5px;
 }
 
 .btn-pag {
     cursor: pointer;
+}
+
+.card-body {
+    padding: 0.5rem !important;
 }

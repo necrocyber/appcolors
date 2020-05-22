@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Colors } from '../interfaces/colors';
-import { Observable, throwError  } from  'rxjs';
+import { Colors, Color } from '../interfaces/colors';
+import { Observable, throwError, Subject  } from  'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { HttpClient, HttpErrorResponse  } from '@angular/common/http'
 
@@ -10,6 +10,14 @@ import { HttpClient, HttpErrorResponse  } from '@angular/common/http'
 export class ColorsService {
 
   URL_COLORS = 'https://reqres.in/api/colors?page='
+
+  colorSubject = new Subject<Color>();
+
+  color$ = this.colorSubject.asObservable();
+
+  sendColor(color: Color) {
+    this.colorSubject.next(color)
+  }
 
   handleError(error: HttpErrorResponse) {
     let errorMessage = 'Unknown error!';
