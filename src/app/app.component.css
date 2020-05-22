@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 0px !important;
+}
+
+.margin-block {
+    padding: 10px;
+}
+
+@media (max-width: 575px) {
+    .margin-block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 575px) {
+    .margin-block {
+        width: 50%;
+    }
+}

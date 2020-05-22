@@ -1,0 +1,10 @@
+.item {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px;
+    flex: 1 1 30%;
+}
+
+.btn-pag {
+    cursor: pointer;
+}
